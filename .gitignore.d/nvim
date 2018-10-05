@@ -1,0 +1,8 @@
+*
+!/.config
+!/.config/nvim
+!/.config/nvim/ginit.vim
+!/.config/nvim/init.vim
+!/.config/nvim/plugins.vim
+!/.gitignore.d
+!/.gitignore.d/nvim
