@@ -37,6 +37,9 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+    " mark bar
+    Plug 'Yilin-Yang/vim-markbar'
+
     " file tree
     Plug 'scrooloose/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -411,3 +414,6 @@ endif
 
 """ pandoc-syntax
 let g:pandoc#syntax#conceal#use = 0
+
+""" markbar
+map <Leader>m <Plug>ToggleMarkbar
