@@ -172,3 +172,6 @@ nnoremap gh :bp<CR>
 nnoremap gl :bn<CR>
 vnoremap gh <ESC>:bp<CR>
 vnoremap gl <ESC>:bn<CR>
+
+" hide insert at bottom
+set noshowmode
