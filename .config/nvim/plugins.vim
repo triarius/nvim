@@ -30,6 +30,9 @@ call plug#begin()
     " restore cursor position
     Plug 'farmergreg/vim-lastplace'
 
+    " quickscope
+    Plug 'unblevable/quick-scope'
+
     " latex 2 unicode
     Plug 'joom/latex-unicoder.vim'
 

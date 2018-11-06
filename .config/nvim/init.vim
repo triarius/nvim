@@ -110,7 +110,7 @@ set foldlevel=2
 " allow use of mouse
 set mouse=a
 
-" split below and to the right by default
+" open new split below and to the right by default
 set splitbelow
 set splitright
 
