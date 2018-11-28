@@ -30,6 +30,9 @@ call plug#begin()
     " restore cursor position
     Plug 'farmergreg/vim-lastplace'
 
+    " quickscope
+    Plug 'unblevable/quick-scope'
+
     " latex 2 unicode
     Plug 'joom/latex-unicoder.vim'
 
@@ -101,6 +104,7 @@ call plug#begin()
     Plug 'lervag/vimtex'
     Plug 'jalvesaq/Nvim-R', {'for': 'R'}
     Plug 'JuliaEditorSupport/julia-vim'
+    Plug 'thanethomson/vim-jenkinsfile'
 
     " haskell
     Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'} " better haskell syntax highlighting

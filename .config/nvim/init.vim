@@ -59,7 +59,7 @@ set shiftwidth=4     " indent width is 4 charaters
 set expandtab        " convert tabs to spaces
 
 " smaller tabs for some files
-autocmd myAuCmd Filetype xml,yaml setlocal ts=2 sw=2
+autocmd myAuCmd Filetype xml,yaml,groovy setlocal ts=2 sw=2
 
 " show whitespace
 set listchars=tab:>·,trail:~,extends:>,precedes:<
@@ -110,7 +110,7 @@ set foldlevel=2
 " allow use of mouse
 set mouse=a
 
-" split below and to the right by default
+" open new split below and to the right by default
 set splitbelow
 set splitright
 
