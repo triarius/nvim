@@ -104,6 +104,7 @@ call plug#begin()
     Plug 'lervag/vimtex'
     Plug 'jalvesaq/Nvim-R', {'for': 'R'}
     Plug 'JuliaEditorSupport/julia-vim'
+    Plug 'thanethomson/vim-jenkinsfile'
 
     " haskell
     Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'} " better haskell syntax highlighting
