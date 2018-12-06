@@ -18,7 +18,7 @@ call plug#begin()
     " comments
     Plug 'scrooloose/nerdcommenter'
 
-    " sensible defualts
+    " sensible defaults
     Plug 'tpope/vim-sensible'
 
     " graphical undo
