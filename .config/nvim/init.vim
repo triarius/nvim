@@ -59,7 +59,7 @@ set shiftwidth=4     " indent width is 4 charaters
 set expandtab        " convert tabs to spaces
 
 " smaller tabs for some files
-autocmd myAuCmd Filetype xml,yaml,groovy setlocal ts=2 sw=2
+autocmd myAuCmd Filetype xml,yaml,groovy,Jenkinsfile setlocal ts=2 sw=2
 
 " show whitespace
 set listchars=tab:>·,trail:~,extends:>,precedes:<
