@@ -6,7 +6,7 @@ augroup myAuCmd
     autocmd!
 augroup END
 
-source ~/.config/nvim/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 
 " GUI clipboard
 set clipboard=unnamedplus
