@@ -16,25 +16,25 @@ nnoremap Q <Nop>
 
 " skip X clipboard for delete commands, send d to * clipboard (PRIMARY)
 nnoremap d "*d
-vnoremap d "*d
+xnoremap d "*d
 nnoremap c "_c
-vnoremap c "_c
+xnoremap c "_c
 nnoremap x "_x
-vnoremap x "_x
+xnoremap x "_x
 nnoremap s "_s
-"vnoremap s "_s
+"xnoremap s "_s
 nnoremap D "*D
-vnoremap D "*D
+xnoremap D "*D
 nnoremap C "_C
-vnoremap C "_C
+xnoremap C "_C
 nnoremap X "_X
-vnoremap X "_X
+xnoremap X "_X
 nnoremap S "_S
-"vnoremap S "_S
+"xnoremap S "_S
 nnoremap <Del> "_x
-vnoremap <Del> "_<Del>
+xnoremap <Del> "_<Del>
 
-" Preven paste in visual mode overwriting register
+" Prevent paste in visual mode overwriting register
 xnoremap <expr> p 'pgv"'.v:register.'y'
 
 " more colours
