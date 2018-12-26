@@ -34,6 +34,9 @@ nnoremap S "_S
 nnoremap <Del> "_x
 vnoremap <Del> "_<Del>
 
+" Preven paste in visual mode overwriting register
+xnoremap <expr> p 'pgv"'.v:register.'y'
+
 " more colours
 if (has("termguicolors"))
     set termguicolors
