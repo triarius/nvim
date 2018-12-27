@@ -35,7 +35,8 @@ nnoremap <Del> "_x
 xnoremap <Del> "_<Del>
 
 " Prevent paste in visual mode overwriting register
-xnoremap <expr> p 'pgv"'.v:register.'y'
+" https://stackoverflow.com/questions/290465/how-to-paste-over-without-overwriting-register
+xnoremap <expr> p 'pgv"'.v:register.'y`>'
 
 " more colours
 if (has("termguicolors"))
