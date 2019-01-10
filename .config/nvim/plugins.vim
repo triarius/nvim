@@ -43,9 +43,9 @@ call plug#begin()
     " mark bar
     Plug 'Yilin-Yang/vim-markbar'
 
-    " file tree
-    Plug 'scrooloose/nerdtree'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
+    "" file tree
+    "Plug 'scrooloose/nerdtree'
+    "Plug 'Xuyuanp/nerdtree-git-plugin'
 
     " fuzzy finder
     Plug 'junegunn/fzf.vim'
@@ -267,8 +267,8 @@ let g:ale_linters= {
 let g:ale_completion_enabled = 1
 
 
-""" nerdtree
-nnoremap <leader>n :NERDTreeToggle<CR>
+"""" nerdtree
+"nnoremap <leader>n :NERDTreeToggle<CR>
 
 
 """ fzf.vim
