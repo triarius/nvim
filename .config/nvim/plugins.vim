@@ -106,6 +106,10 @@ call plug#begin()
     Plug 'JuliaEditorSupport/julia-vim'
     Plug 'martinda/Jenkinsfile-vim-syntax'
 
+    " flutter
+    Plug 'dart-lang/dart-vim-plugin'
+    Plug 'reisub0/hot-reload.vim'
+
     " haskell
     Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'} " better haskell syntax highlighting
     Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
@@ -135,6 +139,11 @@ call plug#end()
 """""""""""
 " Options "
 """""""""""
+
+" dart
+let dart_html_in_string=v:true
+let dart_style_guide = 2
+let dart_format_on_save = 1
 
 """ latex-unicoder.vim
 let g:unicoder_cancel_normal = 1
