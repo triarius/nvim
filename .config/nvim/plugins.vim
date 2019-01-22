@@ -406,15 +406,15 @@ let g:LanguageClient_serverCommands = {
     \ 'javascript': ['javascript-typescript-stdio'],
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'java': ['jdtls'],
-    \ 'julia': ['julia', '--startup-file=no', '--history-file=no', '-e', 'using LanguageServer; server = LanguageServer.LanguageServerInstance(STDIN, STDOUT, false); server.runlinter = true; run(server);']
+    \ 'julia': ['julia', '--startup-file=no', '--history-file=no', '-e', 'using LanguageServer; server = LanguageServer.LanguageServerInstance(STDIN, STDOUT, false); server.runlinter = true; run(server);'],
+    \ 'haskell': ['hie-wrapper', '--lsp']
 \ }
-    "\ 'haskell': ['hie-wrapper', '--lsp']
     "\ 'haskell': ['hie-wrapper', '--lsp', '-r', getcwd() + '/.hie']
 
 "let g:LanguageClient_settingsPath = '~/.config/nvim/hie/settings.json'
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-" Or map each action separately
+" or map each action separately
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
