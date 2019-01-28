@@ -6,7 +6,19 @@ augroup myAuCmd
     autocmd!
 augroup END
 
-source $HOME/.config/nvim/plugins.vim
+" detect os
+if !exists("g:os")
+    if has("win64") || has("win32") || has("win16")
+        let g:os = "Windows"
+    else
+        let g:os = substitute(system('uname'), '\n', '', '')
+    endif
+endif
+
+" source the plugins file
+if g:os != 'Windows'
+    source $HOME/.config/nvim/plugins.vim
+endif
 
 " GUI clipboard
 set clipboard=unnamedplus
@@ -15,16 +27,19 @@ set clipboard=unnamedplus
 nnoremap Q <Nop>
 
 " skip X clipboard for delete commands, send d to * clipboard (PRIMARY)
-nnoremap d "*d
-xnoremap d "*d
+if g:os == 'Linux'
+    nnoremap d "*d
+    xnoremap d "*d
+    nnoremap D "*D
+    xnoremap D "*D
+endif
+
 nnoremap c "_c
 xnoremap c "_c
 nnoremap x "_x
 xnoremap x "_x
 nnoremap s "_s
 "xnoremap s "_s
-nnoremap D "*D
-xnoremap D "*D
 nnoremap C "_C
 xnoremap C "_C
 nnoremap X "_X
@@ -39,7 +54,7 @@ xnoremap <Del> "_<Del>
 xnoremap <expr> p 'pgv"'.v:register.'y`>'
 
 " more colours
-if (has("termguicolors"))
+if has("termguicolors")
     set termguicolors
 endif
 
@@ -68,6 +83,18 @@ autocmd myAuCmd Filetype xml,yaml,groovy,Jenkinsfile setlocal ts=2 sw=2
 " show whitespace
 set listchars=tab:>·,trail:~,extends:>,precedes:<
 set list
+
+" delete trailing whitespace
+" https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+command! TrimWhitespace call TrimWhitespace()
+noremap <Leader>w :call TrimWhitespace()<CR>
+
 
 " indents after soft wrapping
 set breakindent
@@ -147,17 +174,6 @@ let g:ackprg = 'ag --vimgrep'
 
 " neovim-drop-in
 set runtimepath^=/usr/share/vim/vimfiles
-
-" delete trailing whitespace
-" https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
-command! TrimWhitespace call TrimWhitespace()
-noremap <Leader>w :call TrimWhitespace()<CR>
 
 "https://github.com/stoeffel/.dotfiles/blob/master/vim/visual-at.vim
 "run macro on only matching lines
