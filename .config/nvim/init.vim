@@ -18,40 +18,11 @@ endif
 " source the plugins file
 if g:os != 'Windows'
     source $HOME/.config/nvim/plugins.vim
+    source $HOME/.config/nvim/remap.vim
 endif
 
 " GUI clipboard
 set clipboard=unnamedplus
-
-" disable ex mode
-nnoremap Q <Nop>
-
-" skip X clipboard for delete commands, send d to * clipboard (PRIMARY)
-if g:os == 'Linux'
-    nnoremap d "*d
-    xnoremap d "*d
-    nnoremap D "*D
-    xnoremap D "*D
-endif
-
-nnoremap c "_c
-xnoremap c "_c
-nnoremap x "_x
-xnoremap x "_x
-nnoremap s "_s
-"xnoremap s "_s
-nnoremap C "_C
-xnoremap C "_C
-nnoremap X "_X
-xnoremap X "_X
-nnoremap S "_S
-"xnoremap S "_S
-nnoremap <Del> "_x
-xnoremap <Del> "_<Del>
-
-" Prevent paste in visual mode overwriting register
-" https://stackoverflow.com/questions/290465/how-to-paste-over-without-overwriting-register
-xnoremap <expr> p 'pgv"'.v:register.'y`>'
 
 " more colours
 if has("termguicolors")
@@ -84,18 +55,6 @@ autocmd myAuCmd Filetype xml,yaml,groovy,Jenkinsfile setlocal ts=2 sw=2
 set listchars=tab:>·,trail:~,extends:>,precedes:<
 set list
 
-" delete trailing whitespace
-" https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
-command! TrimWhitespace call TrimWhitespace()
-noremap <Leader>w :call TrimWhitespace()<CR>
-
-
 " indents after soft wrapping
 set breakindent
 
@@ -118,9 +77,6 @@ set inccommand=nosplit
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
-
-"This unsets the 'last search pattern' register by hitting return
-nnoremap <CR> :noh<CR><CR>
 
 " cursor shape in insert mode
 set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
@@ -146,28 +102,7 @@ set splitbelow
 set splitright
 
 " terminal
-" Make escape work in the Neovim terminal.
-tnoremap <C-\><Esc> <C-\><C-n>
-
 autocmd myAuCmd TermOpen * setlocal nonumber norelativenumber
-
-" interleave lines
-" https://vi.stackexchange.com/questions/4575/merge-blocks-by-interleaving-lines
-function! Interleave()
-    " retrieve last selected area position and size
-    let start = line(".")
-    execute 'normal! gvo\<esc>'
-    let end = line(".")
-    let [start, end] = sort([start, end], "n")
-    let size = (end - start + 1) / 2
-    " and interleave!
-    for i in range(size - 1)
-        execute (start + size + i). 'm' .(start + 2 * i)
-    endfor
-endfunction
-
-" Select your two contiguous, same-sized blocks, and use it to Interleave ;)
-vnoremap <leader>il <esc>:call Interleave()<CR>
 
 " Ag integration
 let g:ackprg = 'ag --vimgrep'
@@ -175,23 +110,8 @@ let g:ackprg = 'ag --vimgrep'
 " neovim-drop-in
 set runtimepath^=/usr/share/vim/vimfiles
 
-"https://github.com/stoeffel/.dotfiles/blob/master/vim/visual-at.vim
-"run macro on only matching lines
-xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
-
-function! ExecuteMacroOverVisualRange()
-  echo "@".getcmdline()
-  execute ":'<,'>normal @".nr2char(getchar())
-endfunction
-
 " share shada between instances
 autocmd myAuCmd User CursorHold * rshada|wshada
-
-" navigate buffers
-nnoremap gh :bp<CR>
-nnoremap gl :bn<CR>
-vnoremap gh <ESC>:bp<CR>
-vnoremap gl <ESC>:bn<CR>
 
 " hide insert at bottom
 set noshowmode

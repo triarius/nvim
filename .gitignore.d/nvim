@@ -4,5 +4,6 @@
 !/.config/nvim/ginit.vim
 !/.config/nvim/init.vim
 !/.config/nvim/plugins.vim
+!/.config/nvim/remap.vim
 !/.gitignore.d
 !/.gitignore.d/nvim
