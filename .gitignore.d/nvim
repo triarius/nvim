@@ -3,7 +3,7 @@
 !/.config/nvim
 !/.config/nvim/ginit.vim
 !/.config/nvim/init.vim
-!/.config/nvim/plugins.vim
-!/.config/nvim/remap.vim
+!/.config/nvim/init.d
+!/.config/nvim/init.d/**
 !/.gitignore.d
 !/.gitignore.d/nvim

@@ -1,0 +1,117 @@
+[[plugins]]
+repo = 'haya14busa/dein-command.vim'
+
+#[[plugins]]
+#repo = 'JuliaEditorSupport/julia-vim'
+#hook_post_source = "exec 'source' g:pluginDir . 'julia-vim.vim'"
+
+[[plugins]]
+repo = 'NLKNguyen/papercolor-theme'
+
+[[plugins]]
+repo = 'bling/vim-airline'
+hook_add = "exec 'source' g:pluginDir . 'vim-airline.vim'"
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = "let g:airline_theme='papercolor'"
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+hook_add = "exec 'source' g:pluginDir . 'fzf.vim.vim'"
+
+[[plugins]]
+repo = 'desmap/ale-sensible'
+hook_add = "let g:ale_fixers = ['prettier', 'standard']"
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = "exec 'source' g:pluginDir . 'ale.vim'"
+depends = 'desmap/ale-sensible'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+hook_post_update = '{ -> coc#util#install()}'
+hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
+
+[[plugins]]
+repo = 'scrooloose/nerdcommenter'
+
+[[plugins]]
+repo = 'tpope/vim-sensible'
+
+[[plugins]]
+repo = 'sjl/gundo.vim'
+hook_add = 'nnoremap <F6> :GundoToggle<CR>'
+
+# send to repl in terminal
+[[plugins]]
+repo = 'jalvesaq/vimcmdline'
+hook_add = "exec 'source' g:pluginDir . 'vimcmdline.vim'"
+
+[[plugins]]
+repo = 'farmergreg/vim-lastplace'
+hook_add = "let g:lastplace_ignore_buftype = 'quickfix,nofile,help,term'"
+
+[[plugins]]
+repo = 'unblevable/quick-scope'
+
+[[plugins]]
+repo = 'joom/latex-unicoder.vim'
+hook_add = "exec 'source' g:pluginDir . 'latex-unicoder.vim'"
+
+[[plugins]]
+repo = 'Yilin-Yang/vim-markbar'
+hook_add = 'map <Leader>m <Plug>ToggleMarkbar'
+
+# text objects (line w/o newline)
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+[[plugins]]
+repo = 'kana/vim-textobj-line'
+hook_post_source = "exec 'source' g:pluginDir . 'vim-textobj-line.vim'"
+
+[[plugins]]
+repo = 'fidian/hexmode'
+hook_post_source = "let g:hexmode_patterns = '*.bin,*.exe,*.dat,*.o,*.so'"
+
+[[plugins]]
+repo = 'triglav/vim-visual-increment'
+
+[[plugins]]
+repo = 'wesQ3/vim-windowswap'
+
+# aligning (after the fact)
+[[plugins]]
+repo = 'godlygeek/tabular'
+
+# closing brackets
+[[plugins]]
+repo = 'vim-scripts/auto-pairs-gentle'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+# case preserving subsitution
+[[plugins]]
+repo = 'tpope/vim-abolish'
+
+[[plugins]]
+repo = 'salsifis/vim-transpose'
+
+[[plugins]]
+repo = 'raghur/vim-ghost'
+hook_post_update = ':GhostInstall'
+
+[[plugins]]
+repo = 'airblade/vim-rooter'
+hook_add = ''''
+let g:rooter_use_lcd = 1
+let g:rooter_patterns = ['stack.yaml', 'pom.xml', 'build.gradle']
+'''
