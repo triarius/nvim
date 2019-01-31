@@ -1,6 +1,3 @@
-set background=light
-colorscheme PaperColor
-
 set secure
 
 " GUI clipboard

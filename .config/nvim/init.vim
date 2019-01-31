@@ -1,22 +1,4 @@
-if &compatible
-    set nocompatible
-endif
-
-" detect os
-if !exists("g:os")
-    if has("win64") || has("win32") || has("win16")
-        let g:os = "Windows"
-    else
-        let g:os = substitute(system('uname'), '\n', '', '')
-    endif
-endif
-
-if g:os != 'Windows'
-    let g:configDir = '~/.config/nvim/'
-    let g:initDir = g:configDir . 'init.d/'
-    let g:pluginDir = g:initDir . 'plugins/'
-endif
-
+" source a fine in a path relative to the nvim config dir
 function! s:source_init(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))
   let abspath = resolve(expand(g:initDir . a:path))
@@ -39,6 +21,27 @@ function! s:source_init(path, ...) abort
   endtry
 endfunction
 
+if &compatible
+    set nocompatible
+endif
+
+" detect os
+if !exists("g:os")
+    if has("win64") || has("win32") || has("win16")
+        let g:os = "Windows"
+    else
+        let g:os = substitute(system('uname'), '\n', '', '')
+    endif
+endif
+
+" paths for unix machine are different than windows
+if g:os != 'Windows'
+    let g:configDir = '~/.config/nvim/'
+    let g:initDir = g:configDir . 'init.d/'
+    let g:pluginDir = g:initDir . 'plugins/'
+endif
+
+" source every .vim file in init.d
 for f in split(globpath(g:initDir, '*.vim'), '\n')
     call s:source_init(fnamemodify(f, ':t'))
 endfor
