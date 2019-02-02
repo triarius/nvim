@@ -2,10 +2,6 @@
 repo = 'haya14busa/dein-command.vim'
 
 [[plugins]]
-repo = 'JuliaEditorSupport/julia-vim'
-hook_post_source = "exec 'source' g:pluginDir . 'julia-vim.vim'"
-
-[[plugins]]
 repo = 'NLKNguyen/papercolor-theme'
 
 [[plugins]]
@@ -115,3 +111,7 @@ hook_add = ''''
 let g:rooter_use_lcd = 1
 let g:rooter_patterns = ['stack.yaml', 'pom.xml', 'build.gradle']
 '''
+
+[[plugins]]
+repo = 'JuliaEditorSupport/julia-vim'
+hook_post_source = "exec 'source' g:pluginDir . 'julia-vim.vim'"
