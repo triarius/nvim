@@ -1,15 +1,19 @@
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 
-"" use tab to expand snippet or forward cycle press tab again to expand snippet
-"imap <expr><TAB> <SID>coc_complete()
-"" use tab to backward cycle
-"imap <expr><S-TAB> pumvisible() ? '\<C-p>' : '\<S-TAB>'
+" use <tab> for trigger completion and navigate to next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
 
-"function! s:coc_complete()
-  "if pumvisible()
-    "return '\<C-n>'
-  "else
-    "return '\<TAB>'
-  "endif
-"endfunction
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
