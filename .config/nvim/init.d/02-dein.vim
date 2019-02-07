@@ -1,6 +1,6 @@
 let g:dein#install_progress_type = 'title'
 let g:dein#enable_notification = 1
-let g:dein#install_log_filename = '~/.tmp/dein.log'
+let g:dein#install_log_filename = '~/.cache/dein.log'
 
 let s:path = expand('~/.cache/dein')
 
