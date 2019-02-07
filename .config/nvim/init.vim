@@ -25,6 +25,11 @@ if &compatible
     set nocompatible
 endif
 
+" don't use the fish shell as it is not POSIX compatible
+if &shell =~# 'fish$'
+    set shell=bash
+endif
+
 " detect os
 if !exists("g:os")
     if has("win64") || has("win32") || has("win16")
