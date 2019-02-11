@@ -115,3 +115,6 @@ let g:rooter_patterns = ['stack.yaml', 'pom.xml', 'build.gradle']
 [[plugins]]
 repo = 'JuliaEditorSupport/julia-vim'
 hook_post_source = "exec 'source' g:pluginDir . 'julia-vim.vim'"
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
