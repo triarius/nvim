@@ -60,7 +60,7 @@ on_ft = ['kotlin']
 
 [[plugins]]
 repo = 'lervag/vimtex'
-on_ft = ['latex']
+on_ft = ['tex']
 hook_add = "exec 'source' g:pluginDir . 'vimtex.vim'"
 
 [[plugins]]
