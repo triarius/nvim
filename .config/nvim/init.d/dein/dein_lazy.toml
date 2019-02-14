@@ -108,3 +108,7 @@ hook_add = 'let g:pandoc#syntax#conceal#use = 0'
 repo = 'dag/vim-fish'
 on_ft = ['fish']
 hook_add = "exec 'source' g:pluginDir . 'vim-fish.vim'"
+
+[[plugins]]
+repo = 'mzlogin/vim-markdown-toc'
+on_ft = ['markdown']
