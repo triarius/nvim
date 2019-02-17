@@ -9,7 +9,7 @@ autocmd myAuCmd TermOpen * setlocal nonumber norelativenumber
 autocmd myAuCmd User CursorHold * rshada|wshada
 
 " smaller tabs for some files
-autocmd myAuCmd Filetype xml,yaml,groovy,Jenkinsfile setlocal ts=2 sw=2
+autocmd myAuCmd Filetype xml,yaml,json,groovy,Jenkinsfile setlocal ts=2 sw=2
 
 " spelling for certain files
 autocmd myAuCmd FileType text,latex,tex,md,markdown setlocal spell
