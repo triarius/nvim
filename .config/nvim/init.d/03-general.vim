@@ -5,6 +5,10 @@ if g:os == 'Linux'
     set clipboard=unnamedplus
 endif
 
+if g:os == 'Darwin'
+    set clipboard=unnamedplus
+endif
+
 " more colours
 if has("termguicolors")
     set termguicolors
