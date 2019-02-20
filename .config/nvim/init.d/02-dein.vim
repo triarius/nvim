@@ -1,4 +1,4 @@
-if g:os = 'Darwin'
+if g:os == 'Darwin'
     set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 endif
 
