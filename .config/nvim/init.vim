@@ -31,6 +31,7 @@ if &shell =~# 'fish$'
 endif
 
 " detect os
+" Darwin for macOS, Linux for GNU/Linux
 if !exists("g:os")
     if has("win64") || has("win32") || has("win16")
         let g:os = "Windows"
