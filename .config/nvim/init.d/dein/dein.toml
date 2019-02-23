@@ -101,9 +101,9 @@ repo = 'tpope/vim-abolish'
 [[plugins]]
 repo = 'salsifis/vim-transpose'
 
-[[plugins]]
-repo = 'raghur/vim-ghost'
-hook_post_update = ':GhostInstall'
+#[[plugins]]
+#repo = 'raghur/vim-ghost'
+#hook_post_update = ':GhostInstall'
 
 [[plugins]]
 repo = 'airblade/vim-rooter'
