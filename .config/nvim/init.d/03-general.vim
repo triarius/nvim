@@ -1,5 +1,8 @@
 set secure
 
+" allow switching buffer without write
+set hidden
+
 " GUI clipboard
 if g:os == 'Linux'
     set clipboard=unnamedplus
