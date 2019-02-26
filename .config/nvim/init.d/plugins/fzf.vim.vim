@@ -84,5 +84,5 @@ command! -bang -nargs=? -complete=dir Files
 
 set grepprg=rg\ --vimgrep
 
-nnoremap <c-p> :Rg<cr>
-nnoremap <c-f> :Files<cr>
+nnoremap <leader>r :Rg<cr>
+nnoremap <leader>f :Files<cr>
