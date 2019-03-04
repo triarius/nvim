@@ -124,3 +124,6 @@ repo = 'jvirtanen/vim-hcl'
 
 [[plugins]]
 repo = 'rbong/vim-flog'
+
+[[plugins]]
+repo = 'wellle/targets.vim'
