@@ -73,3 +73,5 @@ on_ft = ['fish']
 hook_add = "exec 'source' g:pluginDir . 'vim-fish.vim'"
 
 [[plugins]]
+repo = 'sjl/gundo.vim'
+on_cmd = ['GundoToggle']

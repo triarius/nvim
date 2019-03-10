@@ -42,10 +42,6 @@ repo = 'scrooloose/nerdcommenter'
 [[plugins]]
 repo = 'tpope/vim-sensible'
 
-[[plugins]]
-repo = 'sjl/gundo.vim'
-hook_add = 'nnoremap <F6> :GundoToggle<CR>'
-
 # send to repl in terminal
 [[plugins]]
 repo = 'jalvesaq/vimcmdline'
