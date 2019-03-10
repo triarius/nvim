@@ -37,9 +37,6 @@ hook_post_update = ':call coc#util#install()'
 hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
 
 [[plugins]]
-repo = 'scrooloose/nerdcommenter'
-
-[[plugins]]
 repo = 'tpope/vim-sensible'
 
 # send to repl in terminal
@@ -86,9 +83,6 @@ repo = 'godlygeek/tabular'
 # closing brackets
 [[plugins]]
 repo = 'vim-scripts/auto-pairs-gentle'
-
-[[plugins]]
-repo = 'tpope/vim-surround'
 
 # case preserving subsitution
 [[plugins]]
