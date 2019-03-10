@@ -80,3 +80,6 @@ set runtimepath^=/usr/share/vim/vimfiles
 
 " hide insert at bottom
 set noshowmode
+
+" persisten undo
+set undofile
