@@ -39,6 +39,12 @@ hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
 [[plugins]]
 repo = 'tpope/vim-sensible'
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
 # send to repl in terminal
 [[plugins]]
 repo = 'jalvesaq/vimcmdline'

@@ -77,10 +77,6 @@ repo = 'sjl/gundo.vim'
 on_cmd = ['GundoToggle']
 
 [[plugins]]
-repo = 'tpope/vim-surround'
-on_map = ['<Plug>Dsurround', '<Plug>Csurround', '<Plug>CSurround', '<Plug>Ysurround', '<Plug>YSurround', '<Plug>VSurround', '<Plug>VgSurround', '<Plug>Isurround', 'ISurround']
-
-[[plugins]]
 repo = 'scrooloose/nerdcommenter'
 on_map = ['<Leader>cc', '<leader>cn', '<leader>c<space>', '<leader>cm', '<leader>ci', '<leader>cs', '<leader>cy', '<leader>c$', '<leader>cA', '<leader>ca', '<leader>cl', '<leader>cb', '<leader>cu']
 
