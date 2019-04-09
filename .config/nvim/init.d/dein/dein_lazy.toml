@@ -3,9 +3,7 @@ repo = 'fatih/vim-go'
 on_ft = ['go']
 hook_add = "exec 'source' g:pluginDir . 'vim-go.vim'"
 hook_post_update = '''
-if a:info.status == 'installed' || a:info.force
-    :GoUpdateBinaries
-endif
+:GoUpdateBinaries
 '''
 
 [[plugins]]
