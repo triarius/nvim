@@ -171,3 +171,6 @@ on_ft = ['Jenkinsfile']
 [[plugins]]
 repo = 'mzlogin/vim-markdown-toc'
 on_ft = ['markdown']
+
+[[plugins]]
+repo = 'tpope/vim-eunuch'
