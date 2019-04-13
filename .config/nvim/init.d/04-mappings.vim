@@ -2,7 +2,7 @@
 nnoremap Q <Nop>
 
 " skip X clipboard for delete commands, send d to * clipboard (PRIMARY)
-if g:os == 'Linux'
+if g:os == 'Linux' || g:os == 'Darwin'
     nnoremap d "*d
     xnoremap d "*d
     nnoremap D "*D
