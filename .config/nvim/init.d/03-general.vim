@@ -83,3 +83,6 @@ set noshowmode
 
 " persisten undo
 set undofile
+
+" hide the hjkl at the bottom right
+set noshowcmd
