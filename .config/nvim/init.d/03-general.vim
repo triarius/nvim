@@ -4,12 +4,23 @@ set secure
 set hidden
 
 " GUI clipboard
-if g:os == 'Linux'
-    set clipboard=unnamedplus
+if g:os == 'Linux' || g:os == 'Darwin'
+    set clipboard^=unnamedplus
 endif
 
 if g:os == 'Darwin'
-    set clipboard=unnamedplus
+    let g:clipboard = {
+          \   'name': 'macOSClipboard',
+          \   'copy': {
+          \      '+': 'pbcopy -pboard general',
+          \      '*': 'pbcopy -pboard ruler',
+          \    },
+          \   'paste': {
+          \      '+': 'pbpaste -pboard general',
+          \      '*': 'pbpaste -pboard ruler',
+          \   },
+          \   'cache_enabled': 1,
+          \ }
 endif
 
 " more colours
