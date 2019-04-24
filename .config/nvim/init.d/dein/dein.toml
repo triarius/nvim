@@ -35,8 +35,8 @@ depends = 'desmap/ale-sensible'
 repo = 'neoclide/coc.nvim'
 hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
 hook_post_update = '''
-:call coc#util#install()
-:call coc#util#build()
+:call coc#util#install()<CR>
+:call coc#util#build()<CR>
 '''
 
 [[plugins]]
