@@ -71,8 +71,8 @@ on_ft = ['fish']
 hook_add = "exec 'source' g:pluginDir . 'vim-fish.vim'"
 
 [[plugins]]
-repo = 'sjl/gundo.vim'
-on_cmd = ['GundoToggle']
+repo = 'mbbill/undotree'
+on_cmd = ['UndotreeToggle']
 
 [[plugins]]
 repo = 'scrooloose/nerdcommenter'
