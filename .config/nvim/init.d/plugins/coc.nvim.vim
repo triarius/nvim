@@ -1,5 +1,19 @@
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
+let g:coc_global_extensions = [
+    \ 'coc-emoji',
+    \ 'coc-eslint',
+    \ 'coc-prettier',
+    \ 'coc-tsserver',
+    \ 'coc-tslint',
+    \ 'coc-tslint-plugin',
+    \ 'coc-css',
+    \ 'coc-json',
+    \ 'coc-python',
+    \ 'coc-yaml',
+    \ 'coc-gocode',
+    \ 'coc-html',
+    \]
 
 " use <tab> for trigger completion and navigate to next complete item
 function! s:check_back_space() abort
