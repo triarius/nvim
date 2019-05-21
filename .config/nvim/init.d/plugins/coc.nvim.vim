@@ -1,18 +1,27 @@
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 let g:coc_global_extensions = [
+    \ 'coc-ccls',
+    \ 'coc-css',
+    \ 'coc-docker',
     \ 'coc-emoji',
     \ 'coc-eslint',
+    \ 'coc-gocode',
+    \ 'coc-highlight',
+    \ 'coc-html',
+    \ 'coc-java',
+    \ 'coc-json',
+    \ 'coc-pairs',
     \ 'coc-prettier',
-    \ 'coc-tsserver',
+    \ 'coc-python',
+    \ 'coc-rls',
+    \ 'coc-sh',
+    \ 'coc-solargraph',
     \ 'coc-tslint',
     \ 'coc-tslint-plugin',
-    \ 'coc-css',
-    \ 'coc-json',
-    \ 'coc-python',
+    \ 'coc-tsserver',
+    \ 'coc-vimtex',
     \ 'coc-yaml',
-    \ 'coc-gocode',
-    \ 'coc-html',
     \]
 
 " use <tab> for trigger completion and navigate to next complete item
