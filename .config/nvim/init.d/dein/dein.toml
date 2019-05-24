@@ -10,7 +10,6 @@ hook_add = "exec 'source' g:pluginDir . 'vim-airline.vim'"
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
-hook_add = "let g:airline_theme='papercolor'"
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
