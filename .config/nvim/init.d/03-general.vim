@@ -67,8 +67,14 @@ set inccommand=nosplit
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 
+set ignorecase " searches are case insensitive
+set smartcase  " unless they contain at least one capital letter
+
 " highlight column
 let &colorcolumn='80,100'
+
+" more characters will be sent to the screen for redrawing
+set ttyfast
 
 " folding
 set foldmethod=syntax
