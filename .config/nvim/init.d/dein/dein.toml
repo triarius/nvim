@@ -88,9 +88,10 @@ repo = 'wesQ3/vim-windowswap'
 [[plugins]]
 repo = 'godlygeek/tabular'
 
-# closing brackets
+# pair brackets
 [[plugins]]
-repo = 'vim-scripts/auto-pairs-gentle'
+repo = 'tmsvg/pear-tree'
+hook_post_source = "exec 'source' g:pluginDir . 'pear-tree.vim'"
 
 # case preserving subsitution
 [[plugins]]
