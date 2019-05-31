@@ -35,7 +35,7 @@ repo = 'neoclide/coc.nvim'
 hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
 hook_post_update = '''
 :call coc#util#install()
-:CocUpdate
+:CocUpdate<CR>
 '''
 
 [[plugins]]
