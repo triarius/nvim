@@ -89,6 +89,8 @@ set mouse=a
 set splitbelow
 set splitright
 
+" don't redraw screen in middle of macro execution
+set lazyredraw
 
 " neovim-drop-in
 set runtimepath^=/usr/share/vim/vimfiles
