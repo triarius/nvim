@@ -89,8 +89,6 @@ set mouse=a
 set splitbelow
 set splitright
 
-" Ag integration
-let g:ackprg = 'ag --vimgrep'
 
 " neovim-drop-in
 set runtimepath^=/usr/share/vim/vimfiles
