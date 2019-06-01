@@ -40,6 +40,12 @@ nnoremap gl :bn<CR>
 vnoremap gh <ESC>:bp<CR>
 vnoremap gl <ESC>:bn<CR>
 
+" navigate splits
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " interleave lines
 " https://vi.stackexchange.com/questions/4575/merge-blocks-by-interleaving-lines
 " Select your two contiguous, same-sized blocks, and use it to Interleave ;)
