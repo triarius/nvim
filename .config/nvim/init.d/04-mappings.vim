@@ -1,5 +1,5 @@
-" disable ex mode
-nnoremap Q <Nop>
+" disable ex mode, repeat last macro instead
+nnoremap Q @@
 
 " skip X clipboard for delete commands, send d to * clipboard (PRIMARY)
 if g:os == 'Linux' || g:os == 'Darwin'
