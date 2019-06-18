@@ -80,3 +80,13 @@ fun! TrimWhitespace()
     %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+" return to the root of the git directory, requires the definition of git root
+" in the git config
+command! GitRoot call GitRoot()
+function! GitRoot()
+    let root = trim(system('git root'))
+    if !v:shell_error
+        exec 'cd' root
+    endif
+endfunction
