@@ -3,6 +3,14 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
+" abbreviations for disambiguity
+cnoreabbrev B Buffers
+cnoreabbrev F Files
+cnoreabbrev H History
+
+nnoremap <leader>r :Rg<cr>
+nnoremap <leader>f :Files<cr>
+
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
@@ -83,6 +91,3 @@ command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 set grepprg=rg\ --vimgrep
-
-nnoremap <leader>r :Rg<cr>
-nnoremap <leader>f :Files<cr>

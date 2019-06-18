@@ -90,9 +90,3 @@ function! GitRoot()
         exec 'cd' root
     endif
 endfunction
-
-" abbreviations for disambiguity
-cnoreabbrev B Buffers
-cnoreabbrev F Files
-cnoreabbrev R Rg
-cnoreabbrev H History
