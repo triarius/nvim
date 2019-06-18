@@ -59,7 +59,7 @@ function! Interleave()
     let size = (end - start + 1) / 2
     " and interleave!
     for i in range(size - 1)
-        execute (start + size + i). 'm' .(start + 2 * i)
+        execute (start + size + i) . 'm' . (start + 2 * i)
     endfor
 endfunction
 
