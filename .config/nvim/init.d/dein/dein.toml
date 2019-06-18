@@ -103,7 +103,7 @@ repo = 'salsifis/vim-transpose'
 
 [[plugins]]
 repo = 'airblade/vim-rooter'
-hook_add = ''''
+hook_add = '''
 let g:rooter_use_lcd = 1
 let g:rooter_patterns = ['stack.yaml', 'pom.xml', 'build.gradle']
 '''
@@ -171,3 +171,15 @@ on_ft = ['markdown']
 
 [[plugins]]
 repo = 'tpope/vim-eunuch'
+
+[[plugins]]
+repo = 'rbgrouleff/bclose.vim'
+
+[[plugins]]
+repo = 'francoiscabrol/ranger.vim'
+depends = 'rbgrouleff/bclose.vim'
+hook_add = '''
+let g:ranger_map_keys = 0
+let g:ranger_replace_netrw = 1
+cnoreabbrev R Ranger
+'''
