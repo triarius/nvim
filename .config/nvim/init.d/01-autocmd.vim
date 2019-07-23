@@ -15,4 +15,4 @@ autocmd myAuCmd Filetype hcl,xml,yaml,json,groovy,Jenkinsfile setlocal ts=2 sw=2
 autocmd myAuCmd Filetype gitconfig,go setlocal expandtab!
 
 " spelling for certain files
-autocmd myAuCmd FileType text,latex,tex,md,markdown setlocal spell
+autocmd myAuCmd FileType text,latex,tex,md,markdown,gitcommit setlocal spell
