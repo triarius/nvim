@@ -15,6 +15,7 @@ let g:ale_linters= {
     \ 'c':['clangtidy', 'clang'],
     \ 'java':['checkstyle', 'javac'],
     \ 'javascript':[],
+    \ 'ruby':[],
 \}
 
 " enable completion
