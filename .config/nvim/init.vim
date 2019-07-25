@@ -1,4 +1,4 @@
-" source a fine in a path relative to the nvim config dir
+" source a file in a path relative to the nvim config dir
 function! s:source_init(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))
   let abspath = resolve(expand(g:initDir . a:path))
