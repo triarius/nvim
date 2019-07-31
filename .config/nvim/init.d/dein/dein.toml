@@ -21,14 +21,14 @@ repo = 'tpope/vim-fugitive'
 repo = 'junegunn/fzf.vim'
 hook_add = "exec 'source' g:pluginDir . 'fzf.vim.vim'"
 
-[[plugins]]
-repo = 'desmap/ale-sensible'
-hook_add = "let g:ale_fixers = ['prettier', 'standard']"
+#[[plugins]]
+#repo = 'desmap/ale-sensible'
+#hook_add = "let g:ale_fixers = ['prettier', 'standard']"
 
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = "exec 'source' g:pluginDir . 'ale.vim'"
-depends = 'desmap/ale-sensible'
+#depends = 'desmap/ale-sensible'
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'

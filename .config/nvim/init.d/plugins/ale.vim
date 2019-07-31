@@ -11,7 +11,7 @@ let g:ale_sign_column_always = 1
 
 " ale linters
 let g:ale_linters= {
-    \ 'haskell': ['stack-ghc-mod', 'hlint'],
+    \ 'haskell':['stack-ghc-mod', 'hlint'],
     \ 'c':['clangtidy', 'clang'],
     \ 'java':['checkstyle', 'javac'],
     \ 'javascript':[],
@@ -20,3 +20,6 @@ let g:ale_linters= {
 
 " enable completion
 let g:ale_completion_enabled = 1
+
+" parse makefile
+let g:ale_c_parse_makefile = 1
