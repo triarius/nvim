@@ -26,7 +26,7 @@ hook_add = "exec 'source' g:pluginDir . 'fzf.vim.vim'"
 #hook_add = "let g:ale_fixers = ['prettier', 'standard']"
 
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'dense-analysis/ale'
 hook_add = "exec 'source' g:pluginDir . 'ale.vim'"
 #depends = 'desmap/ale-sensible'
 
