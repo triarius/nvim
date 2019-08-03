@@ -33,9 +33,6 @@ set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
 
-" to get better indenting for tex files
-let g:tex_flavor='latex'
-
 " indentation
 set autoindent       " use indentation of current line for new line
 set smartindent      " use intelligent indentation, follow {, etc
@@ -109,6 +106,3 @@ let g:netrw_banner=0
 let g:netrw_winsize=20
 let g:netrw_liststyle=3
 let g:netrw_localrmdir='rm -r'
-
-"toggle netrw on the left side of the editor
-nnoremap <leader>n :Lexplore<CR>
