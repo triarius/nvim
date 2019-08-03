@@ -60,9 +60,9 @@ hook_add = "let g:lastplace_ignore_buftype = 'quickfix,nofile,help,term'"
 [[plugins]]
 repo = 'unblevable/quick-scope'
 
-[[plugins]]
-repo = 'joom/latex-unicoder.vim'
-hook_add = "exec 'source' g:pluginDir . 'latex-unicoder.vim'"
+#[[plugins]]
+#repo = 'joom/latex-unicoder.vim'
+#hook_add = "exec 'source' g:pluginDir . 'latex-unicoder.vim'"
 
 [[plugins]]
 repo = 'Yilin-Yang/vim-markbar'
