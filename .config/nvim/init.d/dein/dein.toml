@@ -186,7 +186,3 @@ cnoreabbrev R Ranger
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
-hook_add = '''
-let g:multi_cursor_exit_from_visual_mode = 1
-let g:multi_cursor_exit_from_insert_mode = 1
-'''
