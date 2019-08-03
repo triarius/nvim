@@ -11,9 +11,9 @@ cnoreabbrev H History
 nnoremap <leader>f :Files<cr>|     " fuzzy find files in the working directory (where you launched Vim from)
 nnoremap <leader>/ :BLines<cr>|    " fuzzy find lines in the current file
 nnoremap <leader>b :Buffers<cr>|   " fuzzy find an open buffer
-nnoremap <leader>r :Rg |           " fuzzy find text in the working directory
+nnoremap <leader>r :Rg<cr>|           " fuzzy find text in the working directory
 nnoremap <leader>m :Commands<cr>|  " fuzzy find Vim commands (like Ctrl-Shift-P in Sublime/Atom/VSC)
-nnoremap <leader>m :GGrep<cr>|     " grep git with filenames
+nnoremap <leader>g :GGrep<cr>|     " grep git with filenames
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
