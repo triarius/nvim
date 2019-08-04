@@ -1,5 +1,5 @@
-#[[plugins]]
-#repo = 'haya14busa/dein-command.vim'
+[[plugins]]
+repo = 'haya14busa/dein-command.vim'
 
 [[plugins]]
 repo = 'NLKNguyen/papercolor-theme'
@@ -21,20 +21,15 @@ repo = 'tpope/vim-fugitive'
 repo = 'junegunn/fzf.vim'
 hook_add = "exec 'source' g:pluginDir . 'fzf.vim.vim'"
 
-#[[plugins]]
-#repo = 'desmap/ale-sensible'
-#hook_add = "let g:ale_fixers = ['prettier', 'standard']"
-
 [[plugins]]
 repo = 'dense-analysis/ale'
 hook_add = "exec 'source' g:pluginDir . 'ale.vim'"
-#depends = 'desmap/ale-sensible'
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
 hook_post_update = '''
-:call coc#util#install()
+:call coc#util#install()<CR>
 :CocRebuild<CR>
 :CocUpdate<CR>
 '''
