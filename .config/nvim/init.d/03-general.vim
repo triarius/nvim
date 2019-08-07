@@ -106,3 +106,8 @@ let g:netrw_banner=0
 let g:netrw_winsize=20
 let g:netrw_liststyle=3
 let g:netrw_localrmdir='rm -r'
+
+" better diffs
+if has('nvim-0.3.2') || has("patch-8.1.0360")
+    set diffopt=filler,internal,algorithm:histogram,indent-heuristic
+endif
