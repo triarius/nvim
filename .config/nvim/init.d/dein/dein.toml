@@ -181,3 +181,6 @@ cnoreabbrev R Ranger
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
+
+[[plugins]]
+repo= 'mtth/scratch.vim'
