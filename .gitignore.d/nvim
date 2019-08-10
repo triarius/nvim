@@ -4,6 +4,8 @@
 !/.config/nvim/ginit.vim
 !/.config/nvim/init.vim
 !/.config/nvim/coc-settings.json
+!/.config/nvim/dein
+!/.config/nvim/dein/**
 !/.config/nvim/init.d
 !/.config/nvim/init.d/**
 !/.gitignore.d
