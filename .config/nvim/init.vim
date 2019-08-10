@@ -44,7 +44,7 @@ endif
 if g:os != 'Windows'
     let g:configDir = '~/.config/nvim/'
     let g:initDir = g:configDir . 'init.d/'
-    let g:pluginDir = g:initDir . 'plugins/'
+    let g:pluginDir = g:configDir . 'dein/conf/'
 endif
 
 " source every .vim file in init.d
