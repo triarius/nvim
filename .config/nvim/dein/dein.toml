@@ -193,5 +193,5 @@ depends = 'inkarkat/vim-ingo-library'
 [[plugins]]
 repo = 'arp242/jumpy.vim'
 hook_add = '''
-autocmd Filetype ruby call jumpy#map('^\(def|class|module\)')
+autocmd Filetype ruby call jumpy#map('\v^\s*(class|module|def)')
 '''
