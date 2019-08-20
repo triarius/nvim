@@ -18,6 +18,9 @@ repo = 'airblade/vim-gitgutter'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
+repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
 repo = 'junegunn/fzf.vim'
 hook_add = "exec 'source' g:pluginDir . 'fzf.vim.vim'"
 
