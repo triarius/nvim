@@ -19,7 +19,7 @@ let g:ale_linters= {
 \}
 
 " enable completion
-let g:ale_completion_enabled = 1
+let g:ale_completion_enabled = 0
 
 " parse makefile
 let g:ale_c_parse_makefile = 1
