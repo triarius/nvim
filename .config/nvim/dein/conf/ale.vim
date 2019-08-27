@@ -14,7 +14,6 @@ let g:ale_linters= {
     \ 'haskell':['stack-ghc-mod', 'hlint'],
     \ 'c':['clangtidy', 'clang'],
     \ 'java':['checkstyle', 'javac'],
-    \ 'javascript':[],
     \ 'ruby':[],
 \}
 

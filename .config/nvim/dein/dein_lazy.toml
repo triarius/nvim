@@ -10,13 +10,13 @@ hook_post_update = '''
 repo = 'sebdah/vim-delve'
 on_ft = ['go']
 
-[[plugins]]
-repo = 'maxmellon/vim-jsx-pretty'
-on_ft = ['javascript', 'javascript.jsx']
-hook_add = '''
-let g:vim_jsx_pretty_enable_jsx_highlight = 0
-let g:vim_jsx_pretty_colorful_config = 1
-'''
+#[[plugins]]
+#repo = 'maxmellon/vim-jsx-pretty'
+#on_ft = ['javascript', 'javascript.jsx']
+#hook_add = '''
+#let g:vim_jsx_pretty_enable_jsx_highlight = 0
+#let g:vim_jsx_pretty_colorful_config = 1
+#'''
 
 [[plugins]]
 repo = 'elzr/vim-json'
@@ -79,5 +79,42 @@ repo = 'scrooloose/nerdcommenter'
 on_map = ['<Leader>cc', '<leader>cn', '<leader>c<space>', '<leader>cm', '<leader>ci', '<leader>cs', '<leader>cy', '<leader>c$', '<leader>cA', '<leader>ca', '<leader>cl', '<leader>cb', '<leader>cu']
 
 [[plugins]]
-repo = 'scrooloose/nerdtree'
-on_cmd = ['NERDTreeToggle','NERDTreeFind','NERDTree']
+repo = 'leafgarland/typescript-vim'
+on_ft = ['typescript', 'typescript.tsx']
+
+[[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+on_ft = ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx']
+
+[[plugins]]
+repo = 'mustache/vim-mustache-handlebars'
+on_ft = ['hbs']
+
+# flutter
+[[plugins]]
+repo = 'reisub0/hot-reload.vim'
+on_ft = ['dart']
+
+[[plugins]]
+repo = 'ap/vim-css-color'
+on_ft = ['css']
+
+[[plugins]]
+repo = 'jalvesaq/Nvim-R'
+on_ft = ['R']
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+on_ft = ['kotlin']
+
+[[plugins]]
+repo = 'martinda/Jenkinsfile-vim-syntax'
+on_ft = ['Jenkinsfile']
+
+[[plugins]]
+repo = 'mzlogin/vim-markdown-toc'
+on_ft = ['markdown']
+
+[[plugins]]
+repo = 'hail2u/vim-css3-syntax'
+on_ft = ['css']
