@@ -22,3 +22,6 @@ let g:ale_completion_enabled = 0
 
 " parse makefile
 let g:ale_c_parse_makefile = 1
+
+" always use VIRTUAL_ENV
+let g:ale_virtualenv_dir_names = []
