@@ -11,6 +11,9 @@ autocmd myAuCmd User CursorHold * rshada|wshada
 " smaller tabs for some files
 autocmd myAuCmd Filetype hcl,xml,yaml,json,groovy,Jenkinsfile setlocal ts=2 sw=2
 
+" larger tabs for some files
+autocmd myAuCmd Filetype typescript setlocal ts=4 sw=4
+
 " use tabs not spaces
 autocmd myAuCmd Filetype gitconfig,go setlocal expandtab!
 
