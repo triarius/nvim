@@ -30,12 +30,8 @@ hook_add = "exec 'source' g:pluginDir . 'ale.vim'"
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
+build = 'coc#util#install()'
 hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
-hook_post_update = '''
-:call coc#util#install()<CR>
-:CocRebuild<CR>
-:CocUpdate<CR>
-'''
 
 [[plugins]]
 repo = 'tpope/vim-sensible'
