@@ -151,3 +151,6 @@ hook_add = '''
 autocmd Filetype ruby call jumpy#map('\v^\s*(class|module|def)')
 autocmd Filetype toml call jumpy#map('\v^\s\[\[')
 '''
+
+[[plugins]]
+repo =  'glacambre/firenvim'
