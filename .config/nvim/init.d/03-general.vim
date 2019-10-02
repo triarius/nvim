@@ -40,6 +40,10 @@ set tabstop=4        " tab width is 4 charaters
 set shiftwidth=4     " indent width is 4 charaters
 set expandtab        " convert tabs to spaces
 
+autocmd FileType tex setlocal cinkeys=''
+autocmd FileType tex setlocal indentexpr=''
+autocmd FileType tex setlocal indentkeys=''
+
 " show whitespace
 set listchars=tab:>·,trail:~,extends:>,precedes:<
 set list

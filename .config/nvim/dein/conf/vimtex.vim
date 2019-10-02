@@ -12,6 +12,8 @@ let g:vimtex_compiler_latexmk = { 'options': [
             \ '--interaction=nonstopmode'
     \]
 \}
+let g:vimtex_indent_enabled = 0
+let g:vimtex_fold_enabled = 1
 
 " clean on quit
 autocmd myAuCmd User VimtexEventQuit call vimtex#compiler#clean(0)
