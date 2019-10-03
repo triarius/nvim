@@ -154,3 +154,4 @@ autocmd Filetype toml call jumpy#map('\v^\s\[\[')
 
 [[plugins]]
 repo =  'glacambre/firenvim'
+hook_post_source = "exec 'source' g:pluginDir . 'firenvim.vim'"
