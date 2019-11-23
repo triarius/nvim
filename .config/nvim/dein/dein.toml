@@ -164,3 +164,16 @@ repo = 'liuchengxu/vista.vim'
 
 [[plugins]]
 repo = 'jeetsukumaran/vim-indentwise'
+
+[[plugins]]
+repo = 'meain/vim-package-info'
+
+[[plugins]]
+repo = 'norcalli/nvim-colorizer.lua'
+hook_add = '''
+set termguicolors
+lua require'colorizer'.setup()
+'''
+
+[[plugins]]
+repo = 'idanarye/vim-merginal'
