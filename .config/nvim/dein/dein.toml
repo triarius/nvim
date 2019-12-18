@@ -177,3 +177,6 @@ lua require'colorizer'.setup()
 
 [[plugins]]
 repo = 'idanarye/vim-merginal'
+
+[[plugins]]
+repo = 'psliwka/vim-smoothie'
