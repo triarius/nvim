@@ -1,6 +1,7 @@
 {
   "coc.preferences.noselect": false,
   "coc.preferences.snippetIndicator": "►",
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "json"],
   "languageserver": {
     "haskell": {
       "command": "hie-wrapper",
