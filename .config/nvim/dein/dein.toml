@@ -180,3 +180,6 @@ repo = 'idanarye/vim-merginal'
 
 [[plugins]]
 repo = 'psliwka/vim-smoothie'
+
+[[plugins]]
+repo = 'conweller/findr.vim'
