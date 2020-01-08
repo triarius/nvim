@@ -183,3 +183,6 @@ repo = 'psliwka/vim-smoothie'
 
 [[plugins]]
 repo = 'conweller/findr.vim'
+
+[[plugins]]
+repo = 'zimbatm/haproxy.vim'
