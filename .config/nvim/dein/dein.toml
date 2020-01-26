@@ -131,9 +131,6 @@ let g:ranger_replace_netrw = 1
 cnoreabbrev R Ranger
 '''
 
-#[[plugins]]
-#repo = 'terryma/vim-multiple-cursors'
-
 [[plugins]]
 repo = 'inkarkat/vim-ingo-library'
 
@@ -186,3 +183,6 @@ repo = 'conweller/findr.vim'
 
 [[plugins]]
 repo = 'zimbatm/haproxy.vim'
+
+[[plugins]]
+repo = 'junegunn/vim-emoji'
