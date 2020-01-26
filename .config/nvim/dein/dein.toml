@@ -150,13 +150,6 @@ autocmd Filetype toml call jumpy#map('\v^\s\[\[')
 '''
 
 [[plugins]]
-repo =  'glacambre/firenvim'
-hook_post_source = "exec 'source' g:pluginDir . 'firenvim.vim'"
-
-#[[plugins]]
-#repo = 'liuchengxu/vim-clap'
-
-[[plugins]]
 repo = 'liuchengxu/vista.vim'
 
 [[plugins]]
