@@ -10,14 +10,6 @@ hook_post_update = '''
 repo = 'sebdah/vim-delve'
 on_ft = ['go']
 
-#[[plugins]]
-#repo = 'maxmellon/vim-jsx-pretty'
-#on_ft = ['javascript', 'javascript.jsx']
-#hook_add = '''
-#let g:vim_jsx_pretty_enable_jsx_highlight = 0
-#let g:vim_jsx_pretty_colorful_config = 1
-#'''
-
 [[plugins]]
 repo = 'elzr/vim-json'
 on_ft = ['json']
@@ -46,10 +38,6 @@ hook_add = "exec 'source' g:pluginDir . 'dart-vim-plugin.vim'"
 repo =  'neovimhaskell/haskell-vim'
 on_ft = ['haskell']
 hook_add = "exec 'source' g:pluginDir . 'haskell-vim.vim'"
-
-#[[plugins]]
-#repo = 'ndmitchell/ghcid',
-#on_ft= ['haskell']
 
 [[plugins]]
 repo = 'vim-pandoc/vim-pandoc'
