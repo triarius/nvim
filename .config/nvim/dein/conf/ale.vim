@@ -17,6 +17,7 @@ let g:ale_linters= {
     \ 'ruby':[],
     \ 'latex':[],
     \ 'tex':['lacheck'],
+    \ 'fish':[],
 \}
 
 " enable completion
