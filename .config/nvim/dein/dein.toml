@@ -123,12 +123,17 @@ repo = 'wellle/targets.vim'
 repo = 'tpope/vim-eunuch'
 
 [[plugins]]
-repo = 'francoiscabrol/ranger.vim'
+repo = 'rbgrouleff/bclose.vim'
+
+[[plugins]]
+repo = 'ptzz/lf.vim'
 depends = 'rbgrouleff/bclose.vim'
 hook_add = '''
-let g:ranger_map_keys = 0
-let g:ranger_replace_netrw = 1
-cnoreabbrev R Ranger
+let g:lf_replace_netrw = 1
+let g:lf_command_override = 'lf -command "set hidden"'
+let g:lf_map_keys = 0
+noremap <leader>l :Lf<CR>
+cnoreabbrev L Lf
 '''
 
 [[plugins]]
