@@ -30,7 +30,7 @@ hook_add = "exec 'source' g:pluginDir . 'ale.vim'"
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
-merge = 0
+merged = 0
 rev = 'release'
 hook_add = "exec 'source' g:pluginDir . 'coc.nvim.vim'"
 
