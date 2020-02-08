@@ -8,5 +8,7 @@
 !/.config/nvim/dein/**
 !/.config/nvim/init.d
 !/.config/nvim/init.d/**
+!/.config/nvim/lua
+!/.config/nvim/lua/**
 !/.gitignore.d
 !/.gitignore.d/nvim
