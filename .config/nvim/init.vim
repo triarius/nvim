@@ -1,3 +1,5 @@
+set shell=/bin/bash
+
 " source a file in a path relative to the nvim config dir
 function! s:source_init(path, ...) abort
   let use_global = get(a:000, 0, !has('vim_starting'))

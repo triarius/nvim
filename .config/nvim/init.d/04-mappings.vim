@@ -34,12 +34,6 @@ nnoremap <CR> :noh<CR><CR>
 " Make escape work in the Neovim terminal.
 tnoremap <C-\><Esc> <C-\><C-n>
 
-" navigate buffers
-nnoremap gh :bp<CR>
-nnoremap gl :bn<CR>
-vnoremap gh <ESC>:bp<CR>
-vnoremap gl <ESC>:bn<CR>
-
 " navigate splits
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
