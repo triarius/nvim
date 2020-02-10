@@ -185,15 +185,15 @@ repo = 'zimbatm/haproxy.vim'
 [[plugins]]
 repo = 'junegunn/vim-emoji'
 
-[[plugins]]
-repo = 'yuki-ycino/fzf-preview.vim'
-hook_add = "exec 'source' g:pluginDir . 'fzf-preview.vim'"
+#[[plugins]]
+#repo = 'yuki-ycino/fzf-preview.vim'
+#hook_add = "exec 'source' g:pluginDir . 'fzf-preview.vim'"
 
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
+#[[plugins]]
+#repo = 'ryanoasis/vim-devicons'
 
-[[plugins]]
-repo = 'Shougo/neomru.vim'
+#[[plugins]]
+#repo = 'Shougo/neomru.vim'
 
-[[plugins]]
-repo = 'bogado/file-line'
+#[[plugins]]
+#repo = 'bogado/file-line'
