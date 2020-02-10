@@ -5,6 +5,8 @@ let g:fzf_action = {
 
 " abbreviations for disambiguity
 cnoreabbrev B Buffers
+cnoreabbrev Bl BLines
+cnoreabbrev Gf GFiles
 cnoreabbrev F Files
 cnoreabbrev H History
 
