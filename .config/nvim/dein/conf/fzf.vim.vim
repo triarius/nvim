@@ -5,18 +5,13 @@ let g:fzf_action = {
 
 " abbreviations for disambiguity
 cnoreabbrev B Buffers
-cnoreabbrev Bl BLines
-cnoreabbrev Gf GFiles
+cnoreabbrev BL BLines
+cnoreabbrev C Commands
+cnoreabbrev GF GFiles
+cnoreabbrev GG GGrep
 cnoreabbrev F Files
 cnoreabbrev H History
-
-nnoremap <leader>f :Files<cr>|     " fuzzy find files in the working directory (where you launched Vim from)
-nnoremap <leader>/ :BLines<cr>|    " fuzzy find lines in the current file
-nnoremap <leader>b :Buffers<cr>    " fuzzy find an open buffer
-nnoremap <leader>r :Rg<cr>|        " fuzzy find text in the working directory
-nnoremap <leader>m :Commands<cr>|  " fuzzy find Vim commands (like Ctrl-Shift-P in Sublime/Atom/VSC)
-nnoremap <leader>g :GGrep<cr>|     " grep git with filenames
-nnoremap <leader>h :History<cr>|
+cnoreabbrev R Rg
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
