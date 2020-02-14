@@ -19,3 +19,5 @@ autocmd myAuCmd Filetype gitconfig,go setlocal expandtab!
 
 " spelling for certain files
 autocmd myAuCmd FileType text,latex,tex,md,markdown,gitcommit setlocal spell
+
+autocmd myAuCmd BufNewFile,BufRead *.plus setlocal ft=javascript
