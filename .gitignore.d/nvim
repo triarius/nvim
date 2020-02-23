@@ -10,5 +10,7 @@
 !/.config/nvim/init.d/**
 !/.config/nvim/lua
 !/.config/nvim/lua/**
+!/.config/nvim/after
+!/.config/nvim/after/**
 !/.gitignore.d
 !/.gitignore.d/nvim
