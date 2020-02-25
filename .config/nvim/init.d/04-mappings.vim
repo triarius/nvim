@@ -40,6 +40,16 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" disable middle click paste
+map <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+imap <3-MiddleMouse> <Nop>
+imap <4-MiddleMouse> <Nop>
+
 " interleave lines
 " https://vi.stackexchange.com/questions/4575/merge-blocks-by-interleaving-lines
 " Select your two contiguous, same-sized blocks, and use it to Interleave ;)
