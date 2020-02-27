@@ -188,3 +188,29 @@ repo = 'junegunn/vim-emoji'
 
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'pechorin/any-jump.nvim'
+hook_add = '''
+" Jump to definition under cursore
+nnoremap <leader>j :AnyJump<CR>
+
+" open previous opened file (after jump)
+nnoremap <leader>ab :AnyJumpBack<CR>
+
+" open last closed search window again
+nnoremap <leader>al :AnyJumpLastResults<CR>
+
+au FileType any-jump nnoremap <buffer> o :call g:AnyJumpHandleOpen()<cr>
+au FileType any-jump nnoremap <buffer><CR> :call g:AnyJumpHandleOpen()<cr>
+au FileType any-jump nnoremap <buffer> p :call g:AnyJumpHandlePreview()<cr>
+au FileType any-jump nnoremap <buffer> <tab> :call g:AnyJumpHandlePreview()<cr>
+au FileType any-jump nnoremap <buffer> q :call g:AnyJumpHandleClose()<cr>
+au FileType any-jump nnoremap <buffer> <esc> :call g:AnyJumpHandleClose()<cr>
+au FileType any-jump nnoremap <buffer> u :call g:AnyJumpHandleUsages()<cr>
+au FileType any-jump nnoremap <buffer> U :call g:AnyJumpHandleUsages()<cr>
+au FileType any-jump nnoremap <buffer> b :call g:AnyJumpToFirstLink()<cr>
+au FileType any-jump nnoremap <buffer> T :call g:AnyJumpToggleGrouping()<cr>
+au FileType any-jump nnoremap <buffer> a :call g:AnyJumpToggleAllResults()<cr>
+au FileType any-jump nnoremap <buffer> A :call g:AnyJumpToggleAllResults()<cr>
+'''
