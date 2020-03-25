@@ -1,7 +1,6 @@
 let g:coc_snippet_next = '<C-j>'
 let g:coc_snippet_prev = '<C-k>'
 let g:coc_global_extensions = [
-    \ 'coc-ccls',
     \ 'coc-css',
     \ 'coc-docker',
     \ 'coc-emoji',
