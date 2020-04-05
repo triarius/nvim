@@ -1,6 +1,5 @@
 if g:os == 'Darwin'
     set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-    set runtimepath+=/usr/local/opt/fzf
 endif
 
 let g:dein#install_progress_type = 'title'

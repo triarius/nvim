@@ -21,9 +21,13 @@ repo = 'tpope/vim-fugitive'
 repo = 'tpope/vim-rhubarb'
 
 [[plugins]]
-repo = 'junegunn/fzf.vim'
-#repo = 'lotabout/skim.vim'
-hook_add = "exec 'source' g:pluginDir . 'fzf.vim.vim'"
+repo = 'lotabout/skim'
+merged = 0
+hook_build = './install'
+
+[[plugins]]
+repo = 'lotabout/skim.vim'
+hook_add = "exec 'source' g:pluginDir . 'skim.vim'"
 
 [[plugins]]
 repo = 'dense-analysis/ale'
