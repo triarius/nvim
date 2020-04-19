@@ -1,29 +1,26 @@
 {
   "coc.preferences.noselect": false,
   "coc.preferences.snippetIndicator": "►",
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "json"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "json", "go"],
   "languageserver": {
     "haskell": {
       "command": "hie-wrapper",
-      "rootPatterns": [".stack.yaml", "cabal.config", "package.yaml"],
-      "filetypes": ["hs", "lhs", "haskell"],
-      "initializationOptions": {}
-    },
-    "golang": {
-      "command": "bingo",
-      "args": ["--diagnostics-style=instant"],
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"]
-    },
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "stack.yaml",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
       "initializationOptions": {
-         "cache": {
-           "directory": "/tmp/ccls"
-         }
-       }
+        "languageServerHaskell": {
+          "hlintOn": true
+        }
+      }
     }
   }
 }
